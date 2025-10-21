@@ -23,7 +23,18 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="space-y-4">
-            <div className="text-xl font-bold text-primary">CleanNest</div>
+            <div className="flex items-center space-x-2">
+              <img 
+                src="/logos/logo.png" 
+                alt="CleanNest Logo" 
+                className="h-6 w-auto"
+                onError={(e) => {
+                  console.log('Footer logo failed to load:', e.target.src);
+                  e.target.style.display = 'none';
+                }}
+              />
+              <div className="text-xl font-bold text-primary">CleanNest</div>
+            </div>
             <p className="text-muted-foreground text-sm">
               Reliable property care with smart coordination for apartments, condos, and small offices.
             </p>

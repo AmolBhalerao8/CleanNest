@@ -31,6 +31,15 @@ const Header = () => {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
+            <img 
+              src="/logos/logo.png" 
+              alt="CleanNest Logo" 
+              className="h-8 w-auto"
+              onError={(e) => {
+                console.log('Logo failed to load:', e.target.src);
+                e.target.style.display = 'none';
+              }}
+            />
             <div className="text-xl font-bold text-primary">CleanNest</div>
           </Link>
 

@@ -32,7 +32,7 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
             <img 
-              src="./logos/logo.png" 
+              src="/logo.png" 
               alt="CleanNest Logo" 
               className="h-8 w-auto"
               onError={(e) => {

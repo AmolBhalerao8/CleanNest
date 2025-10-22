@@ -30,19 +30,17 @@ const Header = () => {
     <header className="sticky top-0 z-50 w-full border-b bg-card/80 backdrop-blur supports-[backdrop-filter]:bg-card/60">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
-          {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
-            <img 
-              src={logoImage} 
-              alt="CleanNest Logo" 
-              className="h-8 w-auto"
-              onError={(e) => {
-                console.log('Logo failed to load:', e.target.src);
-                e.target.style.display = 'none';
-              }}
-            />
-            <div className="text-xl font-bold text-primary">CleanNest</div>
-          </Link>
+          {/* Mobile menu button */}
+          <div className="lg:hidden">
+            <Button
+              variant="ghost"
+              size="icon"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              aria-label="Toggle menu"
+            >
+              {isMenuOpen ? <X /> : <Menu />}
+            </Button>
+          </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-8">
@@ -69,17 +67,19 @@ const Header = () => {
             </Button>
           </div>
 
-          {/* Mobile menu button */}
-          <div className="lg:hidden">
-            <Button
-              variant="ghost"
-              size="icon"
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-              aria-label="Toggle menu"
-            >
-              {isMenuOpen ? <X /> : <Menu />}
-            </Button>
-          </div>
+          {/* Logo - Right Side */}
+          <Link to="/" className="flex items-center space-x-2">
+            <img 
+              src={logoImage} 
+              alt="CleanNest Logo" 
+              className="h-8 w-auto"
+              onError={(e) => {
+                console.log('Logo failed to load:', e.target.src);
+                e.target.style.display = 'none';
+              }}
+            />
+            <div className="text-xl font-bold text-primary">CleanNest</div>
+          </Link>
         </div>
 
         {/* Mobile Navigation */}

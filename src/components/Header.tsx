@@ -30,56 +30,54 @@ const Header = () => {
     <header className="sticky top-0 z-50 w-full border-b bg-card/80 backdrop-blur supports-[backdrop-filter]:bg-card/60">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
-          {/* Mobile menu button */}
-          <div className="lg:hidden">
-            <Button
-              variant="ghost"
-              size="icon"
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-              aria-label="Toggle menu"
-            >
-              {isMenuOpen ? <X /> : <Menu />}
-            </Button>
-          </div>
-
-          {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center space-x-8">
-            {navigation.map((item) => (
-              <Link
-                key={item.name}
-                to={item.href}
-                className={cn(
-                  "text-sm font-medium transition-colors hover:text-primary",
-                  location.pathname === item.href
-                    ? "text-primary"
-                    : "text-muted-foreground"
-                )}
+          {/* Left side: Navigation and CTA */}
+          <div className="flex items-center space-x-8">
+            {/* Mobile menu button */}
+            <div className="lg:hidden">
+              <Button
+                variant="ghost"
+                size="icon"
+                onClick={() => setIsMenuOpen(!isMenuOpen)}
+                aria-label="Toggle menu"
               >
-                {item.name}
-              </Link>
-            ))}
-          </nav>
-
-          {/* Desktop CTA Button */}
-          <div className="hidden lg:flex">
-            <Button onClick={scrollToInterestForm} variant="hero" size="lg">
-              Get a Quote
-            </Button>
+                {isMenuOpen ? <X /> : <Menu />}
+              </Button>
+            </div>
+            {/* Desktop Navigation */}
+            <nav className="hidden lg:flex items-center space-x-8">
+              {navigation.map((item) => (
+                <Link
+                  key={item.name}
+                  to={item.href}
+                  className={cn(
+                    "text-sm font-medium transition-colors hover:text-primary",
+                    location.pathname === item.href
+                      ? "text-primary"
+                      : "text-muted-foreground"
+                  )}
+                >
+                  {item.name}
+                </Link>
+              ))}
+            </nav>
+            {/* Desktop CTA Button */}
+            <div className="hidden lg:flex">
+              <Button onClick={scrollToInterestForm} variant="hero" size="lg">
+                Get a Quote
+              </Button>
+            </div>
           </div>
-
-          {/* Logo - Right Side */}
-          <Link to="/" className="flex items-center space-x-2">
-            <img 
-              src={logoImage} 
-              alt="CleanNest Logo" 
-              className="h-8 w-auto"
-              onError={(e) => {
-                console.log('Logo failed to load:', e.target.src);
-                e.target.style.display = 'none';
-              }}
-            />
-            <div className="text-xl font-bold text-primary">CleanNest</div>
-          </Link>
+          {/* Right side: Logo */}
+          <div className="flex items-center">
+            <Link to="/" className="flex items-center space-x-2">
+              <img 
+                src={logoImage} 
+                alt="CleanNest Logo" 
+                className="h-8 w-auto"
+              />
+              <div className="text-xl font-bold text-primary">CleanNest</div>
+            </Link>
+          </div>
         </div>
 
         {/* Mobile Navigation */}

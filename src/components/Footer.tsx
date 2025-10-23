@@ -28,7 +28,7 @@ const Footer = () => {
               <img 
                 src={logoImage} 
                 alt="CleanNest Logo" 
-                className="h-6 w-auto"
+                className="h-16 w-auto"
                 onError={(e) => {
                   console.log('Footer logo failed to load:', e.target.src);
                   e.target.style.display = 'none';

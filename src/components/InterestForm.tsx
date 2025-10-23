@@ -305,6 +305,21 @@ const InterestForm = () => {
                   />
                 </div>
 
+                {/* Preferred Contact Method */}
+                <div className="space-y-2">
+                  <Label htmlFor="preferredContactMethod">Preferred method for contact</Label>
+                  <Select value={formData.preferredContactMethod} onValueChange={(value) => setFormData(prev => ({ ...prev, preferredContactMethod: value }))}>
+                    <SelectTrigger>
+                      <SelectValue placeholder="Select contact method" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="sms">SMS</SelectItem>
+                      <SelectItem value="call">Call</SelectItem>
+                      <SelectItem value="email">Email</SelectItem>
+                    </SelectContent>
+                  </Select>
+                </div>
+
                 {/* Consent */}
                 <div className="flex items-start space-x-2">
                   <Checkbox

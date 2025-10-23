@@ -43,11 +43,13 @@ const InterestForm = () => {
   });
 
   const serviceTypeOptions = [
-    "Weekly Property Care",
+    "Standard Cleaning",
+    "Deep Cleaning",
+    "Office Cleaning",
     "Turnover / Move-In",
     "Common Areas",
-    "Small Office",
-    "Add-Ons",
+    "Custom Cleaning (add in notes section)",
+    
   ];
 
   const handleServiceTypeChange = (serviceType: string, checked: boolean) => {
@@ -179,7 +181,7 @@ const InterestForm = () => {
                       </SelectTrigger>
                       <SelectContent>
                         <SelectItem value="property-manager">Property Manager</SelectItem>
-                        <SelectItem value="landlord">Landlord</SelectItem>
+                        <SelectItem value="homeowner">Homeowner</SelectItem>
                         <SelectItem value="tenant">Tenant</SelectItem>
                         <SelectItem value="business-owner">Business Owner</SelectItem>
                         <SelectItem value="other">Other</SelectItem>
@@ -217,7 +219,7 @@ const InterestForm = () => {
 
                   {/* Number of Units */}
                   <div className="space-y-2">
-                    <Label htmlFor="numberOfUnits">Number of Units</Label>
+                    <Label htmlFor="numberOfUnits">Number of Units (if applicable)</Label>
                     <Input
                       id="numberOfUnits"
                       type="number"

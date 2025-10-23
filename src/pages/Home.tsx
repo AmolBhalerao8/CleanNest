@@ -52,7 +52,7 @@ const Home = () => {
     {
       step: "1",
       title: "Request",
-      description: "Submit your property care needs through our simple form"
+      description: "Tell us what you need and choose a time that works for you."
     },
     {
       step: "2", 
@@ -117,10 +117,10 @@ const Home = () => {
         <div className="relative container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
-              Property care, made effortless.
+            We clean. You relax.
             </h1>
             <p className="text-xl lg:text-2xl text-white/90 mb-8 max-w-2xl mx-auto">
-              Weekly upkeep and fast turnarounds for apartments, condos, and small offices—coordinated by a smart booking system.
+            From apartments to offices, we make cleaning effortless — with quick scheduling and trusted service every time.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
@@ -149,8 +149,8 @@ const Home = () => {
       <section className="py-16 lg:py-24">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-4">Why property managers choose CleanNest</h2>
-            <p className="text-xl text-muted-foreground">Reliable service, smart coordination, measurable results</p>
+            <h2 className="text-3xl lg:text-4xl font-bold mb-4">Why our customers love CleanNest</h2>
+            <p className="text-xl text-muted-foreground">Trusted cleaners, smart scheduling, and quality you can see.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {valueProps.map((prop, index) => {
@@ -191,7 +191,7 @@ const Home = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">How It Works</h2>
-            <p className="text-xl text-muted-foreground">Three simple steps to better property care</p>
+            <p className="text-xl text-muted-foreground">Book, clean, relax — it's that easy.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             {howItWorks.map((step, index) => (
@@ -211,13 +211,13 @@ const Home = () => {
       <section className="py-16 lg:py-24">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-4">Complete Property Care Services</h2>
+            <h2 className="text-3xl lg:text-4xl font-bold mb-4">Complete Cleaning Services</h2>
             <p className="text-xl text-muted-foreground mb-8">From weekly maintenance to move-in ready units</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
             <Card className="shadow-medium hover:shadow-large transition-all duration-300">
               <CardHeader>
-                <CardTitle>Weekly Property Care</CardTitle>
+                <CardTitle>Weekly Cleaning</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">Regular maintenance for occupied units and common areas</p>
@@ -333,10 +333,10 @@ const Home = () => {
       <section className="py-16 lg:py-24 gradient-hero">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
-            Ready to streamline property care?
+            Ready for a cleaner space?
           </h2>
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-            Join property managers who trust CleanNest for reliable, professional service.
+            Join hundreds who trust CleanNest for fast, reliable, and professional cleaning.
           </p>
           <Button 
             onClick={scrollToInterestForm}

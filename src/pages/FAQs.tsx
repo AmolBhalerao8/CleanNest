@@ -138,10 +138,10 @@ const FAQs = () => {
                     Send us your questions and we'll get back to you within one business day.
                   </p>
                   <a 
-                    href="mailto:hello@cleannest.co"
+                    href="mailto:clean.nest.chico@gmail.com"
                     className="text-primary hover:underline font-medium"
                   >
-                    hello@cleannest.co
+                    clean.nest.chico@gmail.com
                   </a>
                 </CardContent>
               </Card>
@@ -155,7 +155,7 @@ const FAQs = () => {
                     Speak directly with our team about your property care needs.
                   </p>
                   <div className="text-primary font-medium">
-                    (555) 555-5555
+                    (530) 487-1354
                   </div>
                 </CardContent>
               </Card>

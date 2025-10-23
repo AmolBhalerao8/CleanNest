@@ -20,8 +20,8 @@ const Contact = () => {
               Get in Touch
             </h1>
             <p className="text-xl text-white/90 mb-8">
-              Ready to streamline your property care? We're here to help with any questions 
-              about our services or to provide a personalized quote.
+            Ready for a cleaner space? 
+            Contact us today for a personalized quote or to learn more about our services.
             </p>
           </div>
         </div>
@@ -56,10 +56,10 @@ const Contact = () => {
                   </CardHeader>
                   <CardContent>
                     <a 
-                      href="mailto:hello@cleannest.co"
+                      href="mailto:clean.nest.chico@gmail.com"
                       className="text-primary hover:underline text-lg font-medium"
                     >
-                      hello@cleannest.co
+                      clean.nest.chico@gmail.com
                     </a>
                     <p className="text-muted-foreground mt-2 text-sm">
                       We'll get back to you within one business day
@@ -81,7 +81,7 @@ const Contact = () => {
                   </CardHeader>
                   <CardContent>
                     <div className="text-primary text-lg font-medium">
-                      (555) 555-5555
+                      (530) 487-1354
                     </div>
                     <p className="text-muted-foreground mt-2 text-sm">
                       Business hours: Mon-Fri 8AM-6PM, Sat 9AM-3PM

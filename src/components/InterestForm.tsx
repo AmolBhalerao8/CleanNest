@@ -244,7 +244,7 @@ const InterestForm = () => {
                       <SelectValue placeholder="Select property type" />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="">None</SelectItem>
+                      <SelectItem value="_">None</SelectItem>
                       <SelectItem value="residential">Residential</SelectItem>
                       <SelectItem value="commercial">Commercial</SelectItem>
                     </SelectContent>
@@ -320,7 +320,7 @@ const InterestForm = () => {
                       <SelectValue placeholder="Select contact method" />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="">None</SelectItem>
+                      <SelectItem value="_">None</SelectItem>
                       <SelectItem value="sms">SMS</SelectItem>
                       <SelectItem value="call">Call</SelectItem>
                       <SelectItem value="email">Email</SelectItem>

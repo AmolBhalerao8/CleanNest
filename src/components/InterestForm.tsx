@@ -22,6 +22,7 @@ interface FormData {
   preferredStartDate: string;
   notes: string;
   consent: boolean;
+  propertyType: string; // <-- Add this line
 }
 
 const InterestForm = () => {
@@ -40,14 +41,13 @@ const InterestForm = () => {
     preferredStartDate: "",
     notes: "",
     consent: false,
+    propertyType: "", // <-- Add this line
   });
 
   const serviceTypeOptions = [
     "Standard Cleaning",
     "Deep Cleaning",
-    "Office Cleaning",
     "Turnover / Move-In",
-    "Common Areas",
     "Custom Cleaning (add in notes section)",
     
   ];
@@ -161,7 +161,6 @@ const InterestForm = () => {
                       required
                     />
                   </div>
-
                   {/* Company */}
                   <div className="space-y-2">
                     <Label htmlFor="company">Company / Property</Label>
@@ -171,7 +170,6 @@ const InterestForm = () => {
                       onChange={(e) => setFormData(prev => ({ ...prev, company: e.target.value }))}
                     />
                   </div>
-
                   {/* Role */}
                   <div className="space-y-2">
                     <Label htmlFor="role">Role</Label>
@@ -188,7 +186,6 @@ const InterestForm = () => {
                       </SelectContent>
                     </Select>
                   </div>
-
                   {/* Email */}
                   <div className="space-y-2">
                     <Label htmlFor="email" className="required">
@@ -202,7 +199,6 @@ const InterestForm = () => {
                       required
                     />
                   </div>
-
                   {/* Phone */}
                   <div className="space-y-2">
                     <Label htmlFor="phone" className="required">
@@ -216,7 +212,6 @@ const InterestForm = () => {
                       required
                     />
                   </div>
-
                   {/* Number of Units */}
                   <div className="space-y-2">
                     <Label htmlFor="numberOfUnits">Number of Units (if applicable)</Label>
@@ -229,7 +224,6 @@ const InterestForm = () => {
                     />
                   </div>
                 </div>
-
                 {/* Service Address */}
                 <div className="space-y-2">
                   <Label htmlFor="serviceAddress" className="required">
@@ -242,7 +236,19 @@ const InterestForm = () => {
                     required
                   />
                 </div>
-
+                {/* Property Type Dropdown */}
+                <div className="space-y-2">
+                  <Label htmlFor="propertyType">Property Type</Label>
+                  <Select value={formData.propertyType} onValueChange={(value) => setFormData(prev => ({ ...prev, propertyType: value }))}>
+                    <SelectTrigger>
+                      <SelectValue placeholder="Select property type" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="residential">Residential</SelectItem>
+                      <SelectItem value="commercial">Commercial</SelectItem>
+                    </SelectContent>
+                  </Select>
+                </div>
                 {/* Service Types */}
                 <div className="space-y-3">
                   <Label>Service Type</Label>

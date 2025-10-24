@@ -37,7 +37,7 @@ const Footer = () => {
               <div className="text-xl font-bold text-primary">CleanNest</div>
             </div>
             <p className="text-muted-foreground text-sm">
-              Reliable property care with smart coordination for apartments, condos, and small offices.
+              Reliable cleaning made simple — for homes, apartments, and offices.
             </p>
             <div className="flex items-center space-x-2 text-sm text-muted-foreground">
               <MapPin className="h-4 w-4" />
@@ -67,15 +67,15 @@ const Footer = () => {
             <h3 className="font-semibold text-foreground">Contact</h3>
             <div className="space-y-2">
               <a
-                href="mailto:hello@cleannest.co"
+                href="mailto:clean.nest.chico@gmail.com"
                 className="flex items-center space-x-2 text-sm text-muted-foreground hover:text-primary transition-colors"
               >
                 <Mail className="h-4 w-4" />
-                <span>hello@cleannest.co</span>
+                <span>clean.nest.chico@gmail.com</span>
               </a>
               <div className="flex items-center space-x-2 text-sm text-muted-foreground">
                 <Phone className="h-4 w-4" />
-                <span>(555) 555-5555</span>
+                <span>(530) 487-1354</span>
               </div>
             </div>
           </div>
@@ -105,10 +105,18 @@ const Footer = () => {
         <div className="mt-8 pt-8 border-t border-border">
           <div className="flex flex-col sm:flex-row justify-between items-center space-y-2 sm:space-y-0">
             <div className="text-sm text-muted-foreground">
-              © 2024 CleanNest. All rights reserved.
+              © 2025 CleanNest. All rights reserved.
             </div>
             <div className="flex space-x-4">
-              <div className="text-sm text-muted-foreground">Social Media Placeholders</div>
+              <a
+                href="https://instagram.com/your_instagram_handle"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm text-muted-foreground hover:text-primary transition-colors"
+              >
+                Instagram
+              </a>
+              {/* Add more social links here if needed */}
             </div>
           </div>
         </div>

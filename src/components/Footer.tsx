@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin, Instagram } from "lucide-react";
 import logoImage from "/logo.png";
 
 const Footer = () => {
@@ -109,12 +109,12 @@ const Footer = () => {
             </div>
             <div className="flex space-x-4">
               <a
-                href="https://instagram.com/your_instagram_handle"
+                href="https://www.instagram.com/clean.nest_"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                className="text-muted-foreground hover:text-primary transition-colors"
               >
-                Instagram
+                <Instagram className="h-5 w-5" />
               </a>
               {/* Add more social links here if needed */}
             </div>

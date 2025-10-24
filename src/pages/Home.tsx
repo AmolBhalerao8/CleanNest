@@ -28,7 +28,7 @@ const Home = () => {
   const valueProps = [
     {
       icon: Clock,
-      title: "Reliable weekly schedules",
+      title: "Reliable scheduling",
       description: "Consistent teams, on time, every time."
     },
     {
@@ -217,7 +217,7 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
             <Card className="shadow-medium hover:shadow-large transition-all duration-300">
               <CardHeader>
-                <CardTitle>Weekly Cleaning</CardTitle>
+                <CardTitle>Standard/Deep Cleaning</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">Regular maintenance for occupied units and common areas</p>
@@ -245,7 +245,7 @@ const Home = () => {
             
             <Card className="shadow-medium hover:shadow-large transition-all duration-300">
               <CardHeader>
-                <CardTitle>Common Areas & Offices</CardTitle>
+                <CardTitle>Offices</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">Professional cleaning for shared spaces and small offices</p>
@@ -280,7 +280,7 @@ const Home = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">What Our Clients Say</h2>
-            <p className="text-xl text-muted-foreground">Trusted by property managers and landlords across Chico</p>
+            <p className="text-xl text-muted-foreground">Trusted by homeowners and property managers across Chico</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {testimonials.map((testimonial, index) => (
@@ -336,7 +336,7 @@ const Home = () => {
             Ready for a cleaner space?
           </h2>
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-            Join hundreds who trust CleanNest for fast, reliable, and professional cleaning.
+          Let CleanNest handle the cleaning, so you can enjoy more of what you love.
           </p>
           <Button 
             onClick={scrollToInterestForm}

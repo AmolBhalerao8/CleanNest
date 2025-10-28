@@ -75,7 +75,7 @@ const Header = () => {
                 alt="CleanNest Logo" 
                 className="h-16 w-auto"
               />
-              <div className="text-xl font-bold text-primary">CleanNest</div>
+              <div className="text-xl font-heading font-bold text-headingColor">CleanNest</div>
             </Link>
           </div>
         </div>

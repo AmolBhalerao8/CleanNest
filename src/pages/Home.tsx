@@ -116,8 +116,8 @@ const Home = () => {
         </div>
         <div className="relative container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
-            We clean. You relax.
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-heading font-bold text-headingColor mb-6">
+              We clean. You relax.
             </h1>
             <p className="text-xl lg:text-2xl text-white/90 mb-8 max-w-2xl mx-auto">
             From apartments to offices, we make cleaning effortless — with quick scheduling and trusted service every time.

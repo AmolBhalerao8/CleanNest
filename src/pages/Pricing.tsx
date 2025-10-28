@@ -18,77 +18,77 @@ const Pricing = () => {
 
   const pricingTiers = [
     {
-      title: "Weekly Care",
-      subtitle: "Occupied Units",
-      basePrice: { weekly: "$60-$90", biweekly: "$65-$95", monthly: "$70-$100" },
+      title: "Standard Cleaning",
+      subtitle: "Homes & Apartments",
+      basePrice: { weekly: "$60–$90", biweekly: "$65–$95", monthly: "$70–$100" },
       period: "per visit",
-      description: "Regular maintenance cleaning for occupied residential units",
+      description: "Regular cleaning to keep your space fresh, tidy, and comfortable.",
       features: [
         "Dusting all surfaces",
-        "Vacuum and mop floors", 
+        "Vacuum and mop floors",
         "Kitchen cleaning",
         "Bathroom cleaning",
         "Touch-point sanitization",
-        "Supply and equipment included"
+        "Supplies and equipment included"
       ],
       popular: true
     },
     {
-      title: "Turnover Clean",
-      subtitle: "Move-In Ready",
-      basePrice: { weekly: "$150-$250", biweekly: "$150-$250", monthly: "$150-$250" },
-      period: "per unit",
-      description: "Deep cleaning for vacant units to get them move-in ready fast",
+      title: "Deep Cleaning",
+      subtitle: "Detailed Top-to-Bottom",
+      basePrice: { weekly: "$150–$250", biweekly: "$150–$250", monthly: "$150–$250" },
+      period: "per service",
+      description: "A thorough deep clean for when your home or apartment needs extra attention.",
       features: [
-        "Complete appliance cleaning",
-        "Cabinet cleaning (inside & out)",
-        "Light fixture cleaning",
-        "Detailed floor cleaning",
-        "Move-in inspection",
-        "Same-day availability"
+        "Complete appliance cleaning (inside & out)",
+        "Cabinet cleaning (interior & exterior)",
+        "Light fixture and baseboard cleaning",
+        "Detailed bathroom and kitchen scrubbing",
+        "Floor deep cleaning",
+        "High-touch area disinfection"
       ],
       popular: false
     },
     {
-      title: "Common Areas",
-      subtitle: "Buildings",
-      basePrice: { weekly: "$200-$500", biweekly: "$150-$375", monthly: "$100-$250" },
-      period: "per month",
-      description: "Professional cleaning for lobbies, hallways, and shared spaces",
+      title: "Move-In / Move-Out Cleaning",
+      subtitle: "Perfect for Transitions",
+      basePrice: { weekly: "$150–$250", biweekly: "$150–$250", monthly: "$150–$250" },
+      period: "per service",
+      description: "Deep cleaning for new beginnings — perfect when moving in or out.",
       features: [
-        "Lobby cleaning",
-        "Hallway maintenance",
-        "Stairwell cleaning",
-        "Laundry room upkeep",
-        "Mailbox area cleaning",
-        "Trash area management"
+        "Appliance and cabinet cleaning (inside & out)",
+        "Detailed floor and fixture cleaning",
+        "Bathroom and kitchen sanitization",
+        "Dusting and window sills",
+        "Final inspection ready finish",
+        "Flexible scheduling"
       ],
       popular: false
     },
     {
-      title: "Small Offices",
-      subtitle: "< 2,000 sq ft",
-      basePrice: { weekly: "$100-$150", biweekly: "$110-$165", monthly: "$120-$180" },
+      title: "Office Cleaning",
+      subtitle: "Small Offices (<2,000 sq ft)",
+      basePrice: { weekly: "$100–$150", biweekly: "$110–$165", monthly: "$120–$180" },
       period: "per visit",
-      description: "Reliable office cleaning for small commercial spaces",
+      description: "Reliable cleaning for small offices and workspaces to maintain a professional environment.",
       features: [
         "Desk and surface cleaning",
-        "Restroom cleaning & stocking",
-        "Floor care",
+        "Restroom cleaning and restocking",
+        "Vacuum and mop floors",
         "Trash removal",
-        "Kitchen/break room cleaning",
+        "Kitchen or break room cleaning",
         "Reception area maintenance"
       ],
       popular: false
     }
   ];
 
-  const addOns = [
-    { name: "Interior Windows", price: "Starting at $25" },
-    { name: "Carpet Shampoo", price: "Starting at $75" },
-    { name: "Appliance Deep-Clean", price: "Starting at $50" },
-    { name: "Green Package", price: "No additional cost" }
-  ];
+  // const addOns = [
+  //   { name: "Interior Windows", price: "Starting at $25" },
+  //   { name: "Carpet Shampoo", price: "Starting at $75" },
+  //   { name: "Appliance Deep-Clean", price: "Starting at $50" },
+  //   { name: "Green Package", price: "No additional cost" }
+  // ];
 
   const frequencyDiscounts = {
     weekly: { label: "Weekly", discount: "Best Value", color: "bg-accent" },

@@ -16,63 +16,74 @@ const Services = () => {
   };
 
   const services = [
-    {
-      title: "Weekly Property Care",
-      description: "Consistent maintenance for occupied units to keep your properties in top condition.",
-      price: "$60-$90 per visit",
-      features: [
-        "Dusting all surfaces",
-        "Vacuum and mop floors",
-        "Kitchen cleaning (counters, sink, appliances)",
-        "Bathroom cleaning (toilet, sink, tub/shower)",
-        "Touch-point sanitization",
-        "Common area maintenance"
-      ],
-      popular: false
-    },
-    {
-      title: "Turnover / Move-In Ready",
-      description: "Deep cleaning to get vacant units ready for new tenants quickly.",
-      price: "$150-$250 per unit",
-      features: [
-        "Complete appliance cleaning (inside & out)",
-        "Cabinet cleaning (interior & exterior)",
-        "Light fixture cleaning",
-        "Detailed bathroom cleaning",
-        "Floor deep cleaning",
-        "Move-in ready inspection"
-      ],
-      popular: true
-    },
-    {
-      title: "Common Areas & Buildings",
-      description: "Professional cleaning for shared spaces that make great first impressions.",
-      price: "$200-$500 per month",
-      features: [
-        "Lobby cleaning and maintenance",
-        "Hallway vacuuming and mopping",
-        "Stairwell cleaning",
-        "Laundry room maintenance",
-        "Mailbox area cleaning",
-        "Trash area management"
-      ],
-      popular: false
-    },
-    {
-      title: "Small Offices (<2,000 sq ft)",
-      description: "Reliable office cleaning to maintain a professional environment.",
-      price: "$100-$150 per visit",
-      features: [
-        "Desk and surface cleaning",
-        "Restroom cleaning and stocking",
-        "Floor vacuuming and mopping",
-        "Trash removal",
-        "Kitchen/break room cleaning",
-        "Reception area maintenance"
-      ],
-      popular: false
-    }
-  ];
+  {
+    title: "Standard Cleaning",
+    description: "Regular cleaning to keep your home or apartment fresh, tidy, and comfortable.",
+    price: "$60-$90 per visit",
+    features: [
+      "Dusting all surfaces",
+      "Vacuuming and mopping floors",
+      "Kitchen cleaning (counters, sink, appliances)",
+      "Bathroom cleaning (toilet, sink, tub/shower)",
+      "Touch-point sanitization",
+      "Bedroom and living area care"
+    ],
+    popular: true
+  },
+  {
+    title: "Deep Cleaning",
+    description: "A detailed top-to-bottom clean for when your space needs extra attention.",
+    price: "$150–$250 per service",
+    features: [
+      "Inside appliance cleaning (oven, fridge, microwave)",
+      "Cabinet and drawer cleaning (inside and out)",
+      "Baseboards, light fixtures, and vents",
+      "Detailed bathroom and kitchen scrubbing",
+      "Floor deep cleaning",
+    ],
+    popular: false
+  },
+  {
+    title: "Move-In / Move-Out Cleaning",
+    description: "Perfect for renters, homeowners, or property managers preparing for a new start.",
+    price: "$150-$250 per service",
+    features: [
+      "Full appliance and cabinet cleaning",
+      "Detailed wall and floor care",
+      "Bathroom and kitchen sanitization",
+      "Light fixture and switch cleaning",
+      "Dusting and window sills",
+      "Final inspection ready finish"
+    ],
+    popular: false
+  },
+  {
+    title: "Office & Workspace Cleaning",
+    description: "Professional cleaning for small offices and workspaces to keep them spotless and productive.",
+    price: "$100-$150 per visit",
+    features: [
+      "Desk and surface cleaning",
+      "Restroom cleaning and restocking",
+      "Floor vacuuming and mopping",
+      "Trash removal",
+      "Kitchen or break room cleaning",
+      "Reception and meeting area upkeep"
+    ],
+    popular: true
+  },
+  {
+    title: "A la carte (Custom Cleaning)",
+    description: "Have something special in mind? Tell us what you need in the notes section — we'll tailor a plan for you.",
+    price: "Quote on request",
+    features: [
+      "Flexible service options",
+      "One-time or recurring visits",
+      "Custom cleaning checklist",
+      "Personalized quote"
+    ],
+    popular: true
+  }
+];
 
   const addOns = [
     {
@@ -80,11 +91,11 @@ const Services = () => {
       description: "Professional window cleaning for crystal-clear views",
       price: "Starting at $25"
     },
-    {
-      title: "Carpet Shampoo",
-      description: "Deep carpet cleaning to remove stains and odors",
-      price: "Starting at $75"
-    },
+    // {
+    //   title: "Carpet Shampoo",
+    //   description: "Deep carpet cleaning to remove stains and odors",
+    //   price: "Starting at $75"
+    // },
     {
       title: "Appliance Deep-Clean",
       description: "Thorough cleaning of all appliances inside and out",
@@ -104,10 +115,10 @@ const Services = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl sm:text-5xl font-bold text-foreground mb-6">
-              Complete Property Care Services
+              Cleaning Services for Every Space
             </h1>
             <p className="text-xl text-foreground/90 mb-8">
-              From weekly maintenance to move-in ready units, we provide comprehensive cleaning services tailored to property managers and landlords.
+              Whether it's your home, apartment, or office — we make every clean simple, reliable, and hassle-free.
             </p>
           </div>
         </div>
@@ -118,7 +129,7 @@ const Services = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">Core Services</h2>
-            <p className="text-xl text-foreground/90 mb-8">Professional property care solutions for every need</p>
+            <p className="text-xl text-foreground/90 mb-8">Smart, professional cleaning for modern living.</p>
           </div>
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">

@@ -12,7 +12,7 @@ const Header = () => {
   const navigation = [
     { name: "Home", href: "/" },
     { name: "Services", href: "/services" },
-    { name: "For Property Managers", href: "/for-property-managers" },
+    // { name: "For Property Managers", href: "/for-property-managers" },
     { name: "Pricing", href: "/pricing" },
     { name: "About", href: "/about" },
     { name: "Contact", href: "/contact" },

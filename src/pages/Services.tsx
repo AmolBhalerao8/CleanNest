@@ -103,10 +103,10 @@ const Services = () => {
       <section className="py-16 lg:py-24 gradient-hero">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6">
+            <h1 className="text-4xl sm:text-5xl font-bold text-foreground mb-6">
               Complete Property Care Services
             </h1>
-            <p className="text-xl text-white/90 mb-8">
+            <p className="text-xl text-foreground/90 mb-8">
               From weekly maintenance to move-in ready units, we provide comprehensive cleaning services tailored to property managers and landlords.
             </p>
           </div>
@@ -118,7 +118,7 @@ const Services = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">Core Services</h2>
-            <p className="text-xl text-muted-foreground">Professional property care solutions for every need</p>
+            <p className="text-xl text-foreground/90 mb-8">Professional property care solutions for every need</p>
           </div>
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -237,10 +237,10 @@ const Services = () => {
       {/* CTA Section */}
       <section className="py-16 lg:py-24 gradient-hero">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
+          <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-6">
             Ready to upgrade your property care?
           </h2>
-          <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-foreground/90 mb-8 max-w-2xl mx-auto">
             Get a personalized quote for your properties today.
           </p>
           <Button 

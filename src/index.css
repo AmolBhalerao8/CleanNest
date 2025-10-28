@@ -152,3 +152,56 @@
     transition: var(--transition-fast);
   }
 }
+
+/* Light Mode */
+  --background: 34 30% 90%; /* Darker, warmer beige */
+  --foreground: 150 40% 20%; /* Deep green for main text */
+  --card: 34 30% 95%;
+  --card-foreground: 30 10% 20%;
+  --popover: 34 30% 95%;
+  --popover-foreground: 30 10% 20%;
+  --primary: 34 25% 60%; /* TAN */
+  --primary-foreground: 30 10% 98%; /* Off-white for text on primary */
+  --secondary: 30 10% 90%;
+  --secondary-foreground: 30 10% 20%;
+  --muted: 34 20% 85%; /* Lighter beige for muted elements */
+  --muted-foreground: 30 10% 40%; /* Medium brown-grey for muted text */
+  --accent: 158 64% 52%; /* Green */
+  --accent-foreground: 30 10% 98%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 30 10% 98%;
+  --border: 34 20% 75%;
+  --input: 34 20% 75%;
+  --ring: 34 25% 60%; /* TAN */
+  --radius: 0.5rem;
+  --gradient-primary: linear-gradient(to right, hsl(34 25% 60%), hsl(34 20% 50%));
+  --gradient-hero: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url('/hero-property.jpg');
+  --shadow-primary: 0 10px 15px -3px hsla(34, 25%, 60%, 0.5), 0 4px 6px -2px hsla(34, 25%, 60%, 0.2);
+  --font-heading: 'DM Serif Display', serif;
+  --heading-color: 150 40% 20%; /* Deep green for headings */
+
+  /* Dark Mode */
+  --background: 30 10% 15%; /* Dark brown-grey for dark mode background */
+  --foreground: 150 40% 70%; /* Lighter green for dark mode main text */
+  --card: 30 10% 20%;
+  --card-foreground: 34 30% 90%;
+  --popover: 30 10% 20%;
+  --popover-foreground: 34 30% 90%;
+  --primary: 34 25% 60%; /* TAN */
+  --primary-foreground: 30 10% 98%;
+  --secondary: 30 10% 25%;
+  --secondary-foreground: 34 30% 90%;
+  --muted: 30 10% 30%; /* Darker beige for muted elements in dark mode */
+  --muted-foreground: 34 20% 70%; /* Lighter brown-grey for muted text in dark mode */
+  --accent: 158 64% 52%;
+  --accent-foreground: 30 10% 98%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 30 10% 98%;
+  --border: 30 10% 35%;
+  --input: 30 10% 35%;
+  --ring: 34 25% 60%;
+  --gradient-primary: linear-gradient(to right, hsl(34 25% 60%), hsl(34 20% 50%));
+  --gradient-hero: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url('/hero-property.jpg');
+  --shadow-primary: 0 10px 15px -3px hsla(34, 25%, 60%, 0.5), 0 4px 6px -2px hsla(34, 25%, 60%, 0.2);
+  --font-heading: 'DM Serif Display', serif;
+  --heading-color: 150 40% 20%;

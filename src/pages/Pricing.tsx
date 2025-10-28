@@ -102,15 +102,15 @@ const Pricing = () => {
       <section className="py-16 lg:py-24 gradient-hero">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6">
+            <h1 className="text-4xl sm:text-5xl font-bold text-foreground mb-6">
               Transparent, Fair Pricing
             </h1>
-            <p className="text-xl text-white/90 mb-8">
+            <p className="text-xl text-foreground/90 mb-8">
               Clear ranges with no hidden fees. Final quotes confirmed after site details.
             </p>
             <div className="inline-flex items-center bg-white/10 backdrop-blur rounded-lg p-1">
-              <Info className="h-4 w-4 text-white/80 mr-2" />
-              <span className="text-white/90 text-sm">Bundle & annual discounts available</span>
+              <Info className="h-4 w-4 text-foreground/80 mr-2" />
+              <span className="text-foreground/90 text-sm">Bundle & annual discounts available</span>
             </div>
           </div>
         </div>
@@ -165,13 +165,13 @@ const Pricing = () => {
                   </div>
                   <div className="mt-4">
                     <div className="flex items-baseline space-x-1">
-                      <span className="text-3xl font-bold text-primary">{tier.basePrice[frequency]}</span>
+                      <span className="text-3xl font-bold text-foreground">{tier.basePrice[frequency]}</span>
                       <span className="text-muted-foreground">{tier.period}</span>
                     </div>
                     <div className="flex items-center mt-2">
                       <Badge 
                         variant="secondary" 
-                        className={`${frequencyDiscounts[frequency].color} text-white`}
+                        className={`${frequencyDiscounts[frequency].color} text-foreground`}
                       >
                         {frequencyDiscounts[frequency].discount}
                       </Badge>
@@ -214,7 +214,7 @@ const Pricing = () => {
                   <CardTitle className="text-lg">{addOn.name}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <div className="text-xl font-bold text-primary mb-4">{addOn.price}</div>
+                  <div className="text-xl font-bold text-foreground mb-4">{addOn.price}</div>
                   <Button onClick={scrollToInterestForm} variant="outline" size="sm" className="w-full">
                     Add to Quote
                   </Button>
@@ -272,10 +272,10 @@ const Pricing = () => {
       {/* CTA Section */}
       <section className="py-16 lg:py-24 gradient-hero">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
+          <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-6">
             Ready for a personalized quote?
           </h2>
-          <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-foreground/90 mb-8 max-w-2xl mx-auto">
             Get accurate pricing based on your specific property needs and requirements.
           </p>
           <Button 

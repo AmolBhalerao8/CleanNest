@@ -16,10 +16,10 @@ const Contact = () => {
       <section className="py-16 lg:py-24 gradient-hero">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6">
+            <h1 className="text-4xl sm:text-5xl font-bold text-foreground mb-6">
               Get in Touch
             </h1>
-            <p className="text-xl text-white/90 mb-8">
+            <p className="text-xl text-foreground/90 mb-8">
             Ready for a cleaner space? 
             Contact us today for a personalized quote or to learn more about our services.
             </p>
@@ -35,7 +35,7 @@ const Contact = () => {
             <div className="space-y-8">
               <div>
                 <h2 className="text-3xl font-bold mb-6">Contact Information</h2>
-                <p className="text-lg text-muted-foreground mb-8">
+                <p className="text-lg text-foreground/90 mb-8">
                   Choose the best way to reach us. We typically respond to all inquiries 
                   within one business day.
                 </p>
@@ -61,7 +61,7 @@ const Contact = () => {
                     >
                       clean.nest.chico@gmail.com
                     </a>
-                    <p className="text-muted-foreground mt-2 text-sm">
+                    <p className="text-foreground/90 mt-2 text-sm">
                       We'll get back to you within one business day
                     </p>
                   </CardContent>
@@ -83,7 +83,7 @@ const Contact = () => {
                     <div className="text-primary text-lg font-medium">
                       (530) 487-1354
                     </div>
-                    <p className="text-muted-foreground mt-2 text-sm">
+                    <p className="text-foreground/90 mt-2 text-sm">
                       Business hours: Mon-Fri 8AM-6PM, Sat 9AM-3PM
                     </p>
                   </CardContent>
@@ -215,7 +215,7 @@ const Contact = () => {
       <section className="py-16 lg:py-24">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-6">
+            <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-6">
               Ready to get started?
             </h2>
             <p className="text-xl text-muted-foreground mb-8">

@@ -70,10 +70,10 @@ const FAQs = () => {
       <section className="py-16 lg:py-24 gradient-hero">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6">
+            <h1 className="text-4xl sm:text-5xl font-bold text-foreground mb-6">
               Frequently Asked Questions
             </h1>
-            <p className="text-xl text-white/90 mb-8">
+            <p className="text-xl text-foreground/90 mb-8 max-w-2xl mx-auto">
               Everything you need to know about CleanNest's property care services
             </p>
           </div>
@@ -151,10 +151,10 @@ const FAQs = () => {
                   <CardTitle>Call Us</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-muted-foreground mb-4">
+                  <p className="text-foreground/90 mb-4">
                     Speak directly with our team about your property care needs.
                   </p>
-                  <div className="text-primary font-medium">
+                  <div className="text-foreground font-medium">
                     (530) 487-1354
                   </div>
                 </CardContent>
@@ -179,19 +179,19 @@ const FAQs = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
             <div className="text-center">
               <div className="text-3xl font-bold text-primary mb-2">24-48hrs</div>
-              <div className="text-muted-foreground">Turnover cleaning</div>
+              <div className="text-foreground/90">Turnover cleaning</div>
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold text-primary mb-2">24hrs</div>
-              <div className="text-muted-foreground">Satisfaction guarantee</div>
+              <div className="text-foreground/90">Satisfaction guarantee</div>
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold text-primary mb-2">Licensed</div>
-              <div className="text-muted-foreground">& insured teams</div>
+              <div className="text-foreground/90">& insured teams</div>
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold text-primary mb-2">Chico, CA</div>
-              <div className="text-muted-foreground">& nearby areas</div>
+              <div className="text-foreground/90">& nearby areas</div>
             </div>
           </div>
         </div>

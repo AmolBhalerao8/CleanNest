@@ -118,10 +118,10 @@ const ForPropertyManagers = () => {
       <section className="py-16 lg:py-24 gradient-hero">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-6">
               Predictable schedules. Faster turnarounds. Fewer headaches.
             </h1>
-            <p className="text-xl lg:text-2xl text-white/90 mb-8 max-w-3xl mx-auto">
+            <p className="text-xl lg:text-2xl text-foreground/90 mb-8 max-w-3xl mx-auto">
               Consolidate requests, standardize checklists, and cut vacancy days—without babysitting vendors.
             </p>
             <Button 
@@ -142,7 +142,7 @@ const ForPropertyManagers = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">Built for Property Managers</h2>
-            <p className="text-xl text-muted-foreground">Everything you need to streamline property maintenance</p>
+            <p className="text-xl text-foreground/90">Everything you need to streamline property maintenance</p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -150,12 +150,12 @@ const ForPropertyManagers = () => {
               <Card key={index} className="shadow-medium hover:shadow-large transition-all duration-300">
                 <CardHeader>
                   <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                    <feature.icon className="h-6 w-6 text-primary" />
+                    <feature.icon className="h-6 w-6 text-foreground" />
                   </div>
                   <CardTitle className="text-xl">{feature.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <CardDescription className="text-base">{feature.description}</CardDescription>
+                  <CardDescription className="text-base text-foreground/90">{feature.description}</CardDescription>
                 </CardContent>
               </Card>
             ))}
@@ -224,7 +224,7 @@ const ForPropertyManagers = () => {
               <h2 className="text-3xl lg:text-4xl font-bold mb-6">
                 Why Property Managers Choose CleanNest
               </h2>
-              <p className="text-lg text-muted-foreground mb-8">
+              <p className="text-lg text-foreground/90 mb-8">
                 Stop juggling multiple vendors and chasing down service providers. 
                 Our integrated approach saves you time and reduces vacancy days.
               </p>
@@ -246,13 +246,13 @@ const ForPropertyManagers = () => {
                       <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
                     ))}
                   </div>
-                  <blockquote className="text-muted-foreground italic mb-4">
+                  <blockquote className="text-foreground/90 italic mb-4">
                     "CleanNest has cut our turnover time from 5 days to 2 days on average. 
                     The dashboard makes coordinating across 47 units so much easier."
                   </blockquote>
                   <div>
                     <div className="font-semibold">Maria Rodriguez</div>
-                    <div className="text-sm text-muted-foreground">Regional Property Manager</div>
+                    <div className="text-sm text-foreground/90">Regional Property Manager</div>
                   </div>
                 </CardContent>
               </Card>
@@ -264,13 +264,13 @@ const ForPropertyManagers = () => {
                       <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
                     ))}
                   </div>
-                  <blockquote className="text-muted-foreground italic mb-4">
+                  <blockquote className="text-foreground/90 italic mb-4">
                     "Finally found a cleaning service that understands property management. 
                     Reliable, professional, and the pricing is transparent."
                   </blockquote>
                   <div>
                     <div className="font-semibold">David Kim</div>
-                    <div className="text-sm text-muted-foreground">Property Management Company Owner</div>
+                    <div className="text-sm text-foreground/90">Property Management Company Owner</div>
                   </div>
                 </CardContent>
               </Card>
@@ -289,17 +289,17 @@ const ForPropertyManagers = () => {
             <div className="text-lg font-semibold">Property Management Logo 3</div>
             <div className="text-lg font-semibold">Property Management Logo 4</div>
           </div>
-          <p className="text-muted-foreground mt-4">Placeholder for partner logos</p>
+          <p className="text-foreground/90 mt-4">Placeholder for partner logos</p>
         </div>
       </section>
 
       {/* CTA Section */}
       <section className="py-16 lg:py-24 gradient-hero">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
+          <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-6">
             Ready to streamline your property operations?
           </h2>
-            <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+            <p className="text-xl text-foreground/90 mb-8 max-w-2xl mx-auto">
             Join property managers who trust CleanNest for reliable, 
             cost-effective property care solutions.
           </p>

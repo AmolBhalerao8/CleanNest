@@ -119,7 +119,7 @@ const Home = () => {
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-heading font-bold text-headingColor mb-6">
               We clean. You relax.
             </h1>
-            <p className="text-xl lg:text-2xl text-white/90 mb-8 max-w-2xl mx-auto">
+            <p className="text-xl lg:text-2xl text-foreground mb-8 max-w-2xl mx-auto">
             From apartments to offices, we make cleaning effortless — with quick scheduling and trusted service every time.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -136,7 +136,7 @@ const Home = () => {
                 asChild 
                 variant="outline" 
                 size="xl"
-                className="border-white text-white hover:bg-white hover:text-primary"
+                className="border-foreground text-foreground hover:bg-foreground hover:text-primary"
               >
                 <Link to="/for-property-managers">For Property Managers</Link>
               </Button>
@@ -196,7 +196,7 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             {howItWorks.map((step, index) => (
               <div key={index} className="text-center">
-                <div className="mx-auto w-16 h-16 gradient-primary rounded-full flex items-center justify-center text-white text-2xl font-bold mb-4">
+                <div className="mx-auto w-16 h-16 gradient-primary rounded-full flex items-center justify-center text-foreground text-2xl font-bold mb-4">
                   {step.step}
                 </div>
                 <h3 className="text-xl font-semibold mb-2">{step.title}</h3>
@@ -332,10 +332,10 @@ const Home = () => {
       {/* CTA Block */}
       <section className="py-16 lg:py-24 gradient-hero">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
+          <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-6">
             Ready for a cleaner space?
           </h2>
-          <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-foreground/90 mb-8 max-w-2xl mx-auto">
           Let CleanNest handle the cleaning, so you can enjoy more of what you love.
           </p>
           <Button 

@@ -48,10 +48,10 @@ const About = () => {
       <section className="py-16 lg:py-24 gradient-hero">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6">
+            <h1 className="text-4xl sm:text-5xl font-bold text-foreground mb-6">
               Elevate property care with reliable teams and simple tech
             </h1>
-            <p className="text-xl text-white/90 mb-8">
+            <p className="text-xl text-foreground/90 mb-8">
               CleanNest was founded to solve the coordination headaches that property managers 
               face every day. We combine reliable service teams with smart technology.
             </p>
@@ -115,7 +115,7 @@ const About = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">Our Values</h2>
-            <p className="text-xl text-muted-foreground">What drives us every day</p>
+            <p className="text-xl text-foreground/90 mb-8 max-w-2xl mx-auto">What drives us every day</p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -141,7 +141,7 @@ const About = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl lg:text-4xl font-bold mb-6">Insured & Vetted Teams</h2>
+              <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-6">Insured & Vetted Teams</h2>
               <p className="text-lg text-muted-foreground mb-8">
                 Every team member goes through our comprehensive vetting and training process. 
                 We're fully licensed, insured, and bonded for your peace of mind.
@@ -222,10 +222,10 @@ const About = () => {
       {/* CTA Section */}
       <section className="py-16 lg:py-24 gradient-hero">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
+          <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-6">
             Ready to experience the CleanNest difference?
           </h2>
-          <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-foreground/90 mb-8 max-w-2xl mx-auto">
             Join property managers who trust us for reliable, professional service.
           </p>
           <Button 

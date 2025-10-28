@@ -30,7 +30,14 @@ const Header = () => {
     <header className="sticky top-0 z-50 w-full border-b bg-card/80 backdrop-blur supports-[backdrop-filter]:bg-card/60">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
-          {/* Left side: Navigation and CTA */}
+          {/* Far Left: CleanNest Text */}
+          <div className="flex items-center">
+            <Link to="/" className="flex items-center">
+              <div className="text-xl font-heading font-bold text-headingColor">CleanNest</div>
+            </Link>
+          </div>
+
+          {/* Middle: Navigation and CTA */}
           <div className="flex items-center space-x-8">
             {/* Mobile menu button */}
             <div className="lg:hidden">
@@ -67,15 +74,15 @@ const Header = () => {
               </Button>
             </div>
           </div>
-          {/* Right side: Logo */}
+
+          {/* Far Right: Logo */}
           <div className="flex items-center">
-            <Link to="/" className="flex items-center space-x-2">
+            <Link to="/" className="flex items-center">
               <img 
                 src={logoImage} 
                 alt="CleanNest Logo" 
-                className="h-16 w-auto"
+                className="h-20 w-auto"
               />
-              <div className="text-xl font-heading font-bold text-headingColor">CleanNest</div>
             </Link>
           </div>
         </div>

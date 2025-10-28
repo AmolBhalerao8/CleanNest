@@ -68,19 +68,20 @@ const Home = () => {
 
   const testimonials = [
     {
-      quote: "CleanNest has been a game-changer for our property management. Consistent, reliable, and professional service every time.",
+      quote: "CleanNest has been a game-changer. Consistent, reliable, and professional service every time.",
       name: "Sarah Johnson",
-      role: "Property Manager"
+      role: "Homeowner"
     },
     {
       quote: "The turnover cleaning is exceptional. We've reduced our vacancy days significantly since working with CleanNest.",
       name: "Mike Chen",
-      role: "Landlord"
+      role: "Property Manager"
     },
     {
-      quote: "Love the dashboard feature. Makes coordinating across multiple properties so much easier.",
+
+      quote: "Our office has never looked better. CleanNest delivers quality service every single time.",
       name: "Jennifer Martinez",
-      role: "Regional Property Manager"
+      role: "Business Owner"
     }
   ];
 
@@ -132,14 +133,14 @@ const Home = () => {
                 Get a Quote
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
-              <Button 
+              {/* <Button 
                 asChild 
                 variant="outline" 
                 size="xl"
                 className="border-foreground text-foreground hover:bg-foreground hover:text-primary"
               >
                 <Link to="/for-property-managers">For Property Managers</Link>
-              </Button>
+              </Button> */}
             </div>
           </div>
         </div>

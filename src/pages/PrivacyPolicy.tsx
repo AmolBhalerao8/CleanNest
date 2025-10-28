@@ -77,8 +77,8 @@ const PrivacyPolicy = () => {
                 If you have questions about this Privacy Policy, please contact us at:
               </p>
               <div className="bg-secondary/30 rounded-lg p-6 mt-4">
-                <div>Email: hello@cleannest.co</div>
-                <div>Phone: (555) 555-5555</div>
+                <div>Email: clean.nest.chico@gmail.com</div>
+                <div>Phone: (530) 487-1354</div>
               </div>
             </section>
           </div>

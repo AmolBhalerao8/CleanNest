@@ -103,7 +103,7 @@ const Pricing = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl sm:text-5xl font-bold text-foreground mb-6">
-              Transparent, Fair Pricing
+              Transparent pricing, no surprises
             </h1>
             <p className="text-xl text-foreground/90 mb-8">
               Clear ranges with no hidden fees. Final quotes confirmed after site details.
@@ -200,6 +200,7 @@ const Pricing = () => {
       </section>
 
       {/* Add-Ons Pricing */}
+      {/*
       <section className="py-16 lg:py-24 bg-secondary/30">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
@@ -224,6 +225,7 @@ const Pricing = () => {
           </div>
         </div>
       </section>
+      */}
 
       {/* Pricing Notes */}
       <section className="py-16 lg:py-24">

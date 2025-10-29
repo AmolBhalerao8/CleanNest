@@ -49,11 +49,10 @@ const About = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl sm:text-5xl font-bold text-foreground mb-6">
-              Elevate property care with reliable teams and simple tech
+              Reliable cleaning, simple tech, real peace of mind.
             </h1>
             <p className="text-xl text-foreground/90 mb-8">
-              CleanNest was founded to solve the coordination headaches that property managers 
-              face every day. We combine reliable service teams with smart technology.
+              From busy households to growing teams, we make clean spaces effortless.
             </p>
           </div>
         </div>
@@ -66,8 +65,9 @@ const About = () => {
             <div>
               <h2 className="text-3xl lg:text-4xl font-bold mb-6">Our Mission</h2>
               <p className="text-lg text-muted-foreground mb-6">
-                Property management shouldn't mean chasing down multiple vendors, dealing with 
-                inconsistent service, or spending hours coordinating simple maintenance tasks.
+                Cleaning shouldn't be complicated. You deserve a reliable team, clear communication, 
+                and results you can see. We started CleanNest to make professional cleaning simple 
+                for everyone—students, families, professionals, and small businesses—powered by friendly people and straightforward technology.
               </p>
               <p className="text-lg text-muted-foreground mb-8">
                 We built CleanNest to give property managers a single, reliable solution for 
@@ -75,7 +75,7 @@ const About = () => {
                 coordination effortless.
               </p>
               <Button onClick={scrollToInterestForm} variant="hero" size="lg">
-                Work With Us
+                Get a Free Quote
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </div>
@@ -83,14 +83,14 @@ const About = () => {
             <div className="space-y-6">
               <Card className="shadow-medium">
                 <CardContent className="p-8">
-                  <h3 className="text-xl font-bold mb-4">From Property Manager Frustration</h3>
+                  <h3 className="text-xl font-bold mb-4">From Everyday Frustration</h3>
                   <p className="text-muted-foreground">
-                    "I was spending 3-4 hours every week just coordinating cleaning and maintenance 
-                    across our 30-unit portfolio. Different vendors, different quality standards, 
-                    constant follow-ups. There had to be a better way."
+                    "I tried juggling chores with work and classes—it never lasted. 
+                    Different cleaners, different standards, lots of back-and-forth. 
+                    I needed something simple and consistent.."
                   </p>
                   <div className="mt-4 text-sm text-muted-foreground italic">
-                    — CleanNest Founder (placeholder)
+                    — CleanNest Founder
                   </div>
                 </CardContent>
               </Card>
@@ -99,9 +99,9 @@ const About = () => {
                 <CardContent className="p-8">
                   <h3 className="text-xl font-bold mb-4">To Streamlined Solution</h3>
                   <p className="text-muted-foreground">
-                    Today, CleanNest serves property managers across Chico, CA with coordinated 
-                    teams, consistent quality standards, and technology that eliminates the 
-                    coordination headaches.
+                    Today, CleanNest serves homes, apartments, and offices across Chico, CA with trusted cleaners,
+                    consistent checklists, and easy online scheduling—so you can book in minutes and come back to 
+                    spotless results.
                   </p>
                 </CardContent>
               </Card>
@@ -164,8 +164,7 @@ const About = () => {
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground mb-4">
-                    Every service is verified and documented. If something's not right, 
-                    we'll make it right within 24 hours—guaranteed.
+                    Every service is verified and documented.
                   </p>
                   <div className="bg-accent/10 rounded-lg p-4">
                     <p className="font-semibold text-accent">

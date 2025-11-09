@@ -16,7 +16,7 @@ const FAQs = () => {
   const faqs = [
     {
       question: "How do I schedule regular cleaning services?",
-      answer: "Simply submit our interest form below with your property details and preferred frequency. We'll contact you within one business day to set up your recurring schedule and assign your dedicated team."
+      answer: "Simply submit our quote form below with your property details and preferred frequency. We'll contact you within one business day to set up your recurring schedule and assign your dedicated team."
     },
     {
       question: "What areas do you currently serve?",

@@ -23,6 +23,7 @@ interface FormData {
   notes: string;
   consent: boolean;
   propertyType: string; // <-- Add this line
+  preferredContactMethod: string; // <-- Add this line
 }
 
 const InterestForm = () => {
@@ -42,6 +43,7 @@ const InterestForm = () => {
     notes: "",
     consent: false,
     propertyType: "", // <-- Add this line
+    preferredContactMethod: "", // <-- Add this line
   });
 
   const serviceTypeOptions = [
@@ -95,6 +97,7 @@ const InterestForm = () => {
           preferredStartDate: formData.preferredStartDate,
           notes: formData.notes,
           consent: formData.consent,
+          preferredContactMethod: formData.preferredContactMethod,
           timestamp: new Date().toISOString(),
           formType: 'Quote Request'
         }),

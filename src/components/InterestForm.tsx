@@ -1,4 +1,5 @@
 import { useState } from "react";
+import emailjs from '@emailjs/browser';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -22,8 +23,8 @@ interface FormData {
   preferredStartDate: string;
   notes: string;
   consent: boolean;
-  propertyType: string; // <-- Add this line
-  preferredContactMethod: string; // <-- Add this line
+  propertyType: string; 
+  preferredContactMethod: string; 
 }
 
 const InterestForm = () => {
@@ -42,8 +43,8 @@ const InterestForm = () => {
     preferredStartDate: "",
     notes: "",
     consent: false,
-    propertyType: "", // <-- Add this line
-    preferredContactMethod: "", // <-- Add this line
+    propertyType: "", 
+    preferredContactMethod: "", 
   });
 
   const serviceTypeOptions = [
@@ -104,9 +105,30 @@ const InterestForm = () => {
       });
 
       if (response.ok) {
+        // Send thank you email via EmailJS
+        if (formData.email) {
+          try {
+            await emailjs.send(
+              'service_83d6458',
+              'template_6pluhie',
+              {
+                to_email: formData.email,
+                to_name: formData.fullName,
+                from_name: 'CleanNest',
+                reply_to: 'clean.nest.chico@gmail.com',
+              },
+              'hY8kssr9DxpOPa-V8'
+            );
+            console.log('Thank you email sent successfully');
+          } catch (emailError) {
+            console.error('Failed to send thank you email:', emailError);
+            // Don't block - form submission was still successful
+          }
+        }
+
         toast({
           title: "Quote Request Submitted!",
-          description: "Thanks! We'll get back to you within one business day.",
+          description: "Thanks! We'll get back to you within one business day. Check your email for a confirmation.",
         });
 
         // Reset form

@@ -4,7 +4,7 @@ const PrivacyPolicy = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl font-bold mb-8 text-foreground">Privacy Policy</h1>
-          <div className="text-foreground/90 mb-8">Last updated: September 18, 2024</div>
+          <div className="text-foreground/90 mb-8">Last updated: November 18, 2025</div>
           
           <div className="prose prose-lg max-w-none space-y-8">
             <section>

@@ -67,11 +67,11 @@ const About = () => {
               <p className="text-lg text-muted-foreground mb-6">
                 Cleaning shouldn't be complicated. You deserve a reliable team, clear communication, 
                 and results you can see. We started CleanNest to make professional cleaning simple 
-                for everyone—students, families, professionals, and small businesses—powered by friendly people and straightforward technology.
+                for everyone students, families, professionals, and small businesses powered by friendly people and straightforward technology.
               </p>
               <p className="text-lg text-muted-foreground mb-8">
                 We built CleanNest to give property managers a single, reliable solution for 
-                all their cleaning and maintenance needs—backed by technology that makes 
+                all their cleaning and maintenance needs backed by technology that makes 
                 coordination effortless.
               </p>
               <Button onClick={scrollToInterestForm} variant="hero" size="lg">
@@ -85,7 +85,7 @@ const About = () => {
                 <CardContent className="p-8">
                   <h3 className="text-xl font-bold mb-4">From Everyday Frustration</h3>
                   <p className="text-muted-foreground">
-                    "I tried juggling chores with work and classes—it never lasted. 
+                    "I tried juggling chores with work and classes it never lasted. 
                     Different cleaners, different standards, lots of back-and-forth. 
                     I needed something simple and consistent.."
                   </p>
@@ -100,7 +100,7 @@ const About = () => {
                   <h3 className="text-xl font-bold mb-4">To Streamlined Solution</h3>
                   <p className="text-muted-foreground">
                     Today, CleanNest serves homes, apartments, and offices across Chico, CA with trusted cleaners,
-                    consistent checklists, and easy online scheduling—so you can book in minutes and come back to 
+                    consistent checklists, and easy online scheduling so you can book in minutes and come back to 
                     spotless results.
                   </p>
                 </CardContent>

@@ -81,7 +81,7 @@ const Header = () => {
               <img 
                 src={logoImage} 
                 alt="CleanNest Logo" 
-                className="h-20 w-auto"
+                className="h-16 w-auto"
               />
             </Link>
           </div>

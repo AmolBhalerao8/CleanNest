@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -10,14 +11,23 @@ import {
   MapPin, 
   Star,
   ArrowRight,
-  Leaf
+  Leaf,
+  Instagram,
+  Camera,
+  X
 } from "lucide-react";
 import heroProperty from "@/assets/hero-property.jpg";
 import cleanLivingRoom from "@/assets/clean-living-room.jpg";
 import cleanKitchen from "@/assets/clean-kitchen.jpg";
 import cleanCommonArea from "@/assets/clean-common-area.jpg";
+import cleanBathroom from "@/assets/clean-bathroom.jpg";
+import work1 from "@/assets/our-work/work1.jpg";
+import work2 from "@/assets/our-work/work2.jpg";
+import work3 from "@/assets/our-work/work3.jpg";
 
 const Home = () => {
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
   const scrollToInterestForm = () => {
     const interestForm = document.getElementById("interest-form");
     if (interestForm) {
@@ -155,7 +165,7 @@ const Home = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {valueProps.map((prop, index) => {
-              const images = [cleanLivingRoom, cleanKitchen, cleanCommonArea, cleanLivingRoom];
+              const images = [cleanLivingRoom, cleanKitchen, cleanCommonArea, cleanBathroom];
               const imageAlts = [
                 "Clean, organized living room showcasing reliable weekly cleaning services",
                 "Spotless kitchen ready for move-in after CleanNest turnover cleaning",
@@ -187,8 +197,51 @@ const Home = () => {
         </div>
       </section>
 
-      {/* How It Works */}
+      {/* Our Work Gallery */}
       <section className="py-16 lg:py-24 bg-secondary/30">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl lg:text-4xl font-bold mb-4">Our Work</h2>
+            <p className="text-xl text-muted-foreground">Real results from real cleans — see the CleanNest difference.</p>
+          </div>
+          
+          {/* Photo Gallery Grid */}
+          <div className="flex justify-center gap-4 mb-8 flex-wrap">
+            {[work1, work2, work3].map((image, index) => (
+              <div 
+                key={index} 
+                className="w-64 h-64 bg-muted rounded-lg overflow-hidden group cursor-pointer relative"
+                onClick={() => setSelectedImage(image)}
+              >
+                <img 
+                  src={image} 
+                  alt={`CleanNest cleaning work example ${index + 1}`}
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+                {/* Hover overlay */}
+                <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 transition-colors duration-300" />
+              </div>
+            ))}
+          </div>
+
+          {/* Instagram CTA */}
+          <div className="text-center">
+            <a 
+              href="https://www.instagram.com/clean.nest_/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors font-medium"
+            >
+              <Instagram className="h-5 w-5" />
+              <span>Follow us on Instagram for more photos</span>
+              <ArrowRight className="h-4 w-4" />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* How It Works */}
+      <section className="py-16 lg:py-24">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">How It Works</h2>
@@ -350,6 +403,27 @@ const Home = () => {
           </Button>
         </div>
       </section>
+
+      {/* Lightbox Modal */}
+      {selectedImage && (
+        <div 
+          className="fixed inset-0 z-50 bg-black/80 flex items-center justify-center p-4"
+          onClick={() => setSelectedImage(null)}
+        >
+          <button 
+            className="absolute top-4 right-4 text-white hover:text-gray-300 transition-colors"
+            onClick={() => setSelectedImage(null)}
+          >
+            <X className="h-8 w-8" />
+          </button>
+          <img 
+            src={selectedImage} 
+            alt="CleanNest work enlarged view"
+            className="max-w-full max-h-[90vh] object-contain rounded-lg"
+            onClick={(e) => e.stopPropagation()}
+          />
+        </div>
+      )}
     </div>
   );
 };

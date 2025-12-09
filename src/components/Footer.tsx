@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Mail, Phone, MapPin, Instagram } from "lucide-react";
+import { Mail, Phone, MapPin, Instagram, Star } from "lucide-react";
 import logoImage from "/logo.png";
 
 const Footer = () => {
@@ -105,7 +105,7 @@ const Footer = () => {
         <div className="mt-8 pt-8 border-t border-border">
           <div className="flex flex-col sm:flex-row justify-between items-center space-y-2 sm:space-y-0">
             <div className="text-sm text-muted-foreground">
-              © 2025 CleanNest. All rights reserved.
+              2025 CleanNest. All rights reserved.
             </div>
             <div className="flex space-x-4">
               <a
@@ -116,7 +116,15 @@ const Footer = () => {
               >
                 <Instagram className="h-5 w-5" />
               </a>
-              {/* Add more social links here if needed */}
+              <a
+                href="https://g.page/r/YOUR_GOOGLE_REVIEW_LINK"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-primary transition-colors"
+                title="Leave us a Google Review"
+              >
+                <Star className="h-5 w-5" />
+              </a>
             </div>
           </div>
         </div>

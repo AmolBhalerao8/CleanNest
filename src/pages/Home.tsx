@@ -225,7 +225,7 @@ const Home = () => {
           </div>
 
           {/* Instagram CTA */}
-          <div className="text-center">
+          <div className="text-center space-y-3">
             <a 
               href="https://www.instagram.com/clean.nest_/" 
               target="_blank" 
@@ -236,6 +236,18 @@ const Home = () => {
               <span>Follow us on Instagram for more photos</span>
               <ArrowRight className="h-4 w-4" />
             </a>
+            <div>
+              <a 
+                href="https://share.google/rYdSOx5OwtKW0t59r" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors font-medium"
+              >
+                <Star className="h-5 w-5" />
+                <span>Check us out on Google and share your experience!</span>
+                <ArrowRight className="h-4 w-4" />
+              </a>
+            </div>
           </div>
         </div>
       </section>

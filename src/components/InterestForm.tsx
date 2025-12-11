@@ -362,7 +362,7 @@ const InterestForm = () => {
                     required
                   />
                   <Label htmlFor="consent" className="text-sm leading-relaxed">
-                    I agree to receive communications from CleanNest and to the Privacy Policy. *
+                    I agree to receive communications from CleanNest and to the Privacy Policy and Terms of Service. *
                   </Label>
                 </div>
 
